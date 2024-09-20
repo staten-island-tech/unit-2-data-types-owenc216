@@ -38,40 +38,21 @@ print ("give me a number")
 a = int(input(""))
 print ("give me another number")
 b = int(input(""))
-def compute_hcf(x, y):
-    if x > y:
-        smaller = y
+def compute_gcf(Factor1, Factor2):
+    if Factor1 > Factor2:
+        smaller = Factor2
     else:
-        smaller = x
+        smaller = Factor1
     for i in range(1, smaller+1):
-        if((x % i == 0) and (y % i == 0)):
-            hcf = i 
-    return hcf
+        if((Factor1 % i == 0) and (Factor2 % i == 0)):
+            gcf = i 
+    return gcf
 
-num1 = a
-num2 = b
+Factor1 = a
+Factor2 = b
 
-print("The GCF is", compute_hcf(num1, num2))
+print("The GCF is", compute_gcf(Factor1, Factor2))
 
 
-
-""" number = int(input("give me a number"))
-number2= int(input("give me another number"))
-Factors = []
-Factors = []
-gcf = []
-for i in range(number):
-    if number % (i+1)==0:
-        Factors.append(i+1)
-
-Factors2 = []
-for i in range(number2):
-    if number % (i+1)==0:
-        Factors2.append(i+1)
-
-for i in Factors and Factors2:
-    Factors.append(i)
-print ((gcf))
- """
 
 
