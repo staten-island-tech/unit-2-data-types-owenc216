@@ -46,13 +46,7 @@ def compute_gcf(Factor1, Factor2):
     for i in range(1, smaller+1):
         if((Factor1 % i == 0) and (Factor2 % i == 0)):
             gcf = i 
-    return gcf
-
 Factor1 = a
 Factor2 = b
 
 print("The GCF is", compute_gcf(Factor1, Factor2))
-
-
-
-
