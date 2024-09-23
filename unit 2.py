@@ -38,17 +38,14 @@ print ("give me a number")
 a = int(input(""))
 print ("give me another number")
 b = int(input(""))
-def compute_gcf(Factor1, Factor2):
-    if Factor1 > Factor2:
-        smaller = Factor2
-    else:
-        smaller = Factor1
-    for i in range(1, smaller+1):
-        if((Factor1 % i == 0) and (Factor2 % i == 0)):
-            gcf = i 
-    return gcf
 
-Factor1 = a
-Factor2 = b
+if a > b:
+        smaller = b
+else:
+        smaller = a
+for i in range(1, smaller+1):
+    if(a, 1 % i == 0) and ( b % i == 0):
+        gcf = i
 
-print("The GCF is", compute_gcf(Factor1, Factor2))
+
+print("the gcf is" , (gcf))
