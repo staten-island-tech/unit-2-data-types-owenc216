@@ -46,6 +46,4 @@ else:
 for i in range(1, smaller+1):
     if(a, 1 % i == 0) and ( b % i == 0):
         gcf = i
-
-
 print("the gcf is" , (gcf))
